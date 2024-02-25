@@ -1,0 +1,13 @@
+To remove any product type of multiple product type on the woocommerce use the following code in the function.php file
+
+We keep only variable product and remove all the other typs.
+
+
+add_filter( 'product_type_selector', 'remove_product_types' );
+function remove_product_types( $types ){
+    unset( $types['simple'] );
+    unset( $types['grouped'] );
+    unset( $types['external'] );
+
+    return $types;
+}
