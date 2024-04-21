@@ -1,0 +1,5 @@
+add_filter( 'woocommerce_add_to_cart_validation', 'bbloomer_only_one_in_cart', 9999 );
+   
+function bbloomer_only_one_in_cart( $passed ) {
+   wc_empty_cart();
+   return $passed;
