@@ -1,0 +1,15 @@
+Load JavaScript Deferred
+
+/jquery-?[0-9.]*(.min|.slim|.slim.min)?.js
+/wp-includes/js/jquery/jquery-migrate.min.js
+
+
+
+Delay JavaScript Execution
+
+/jquery-?[0-9.]*(.min|.slim|.slim.min)?.js
+/wp-includes/js/jquery/jquery-migrate.min.js
+/plugins/revslider/public/assets/js/
+setREVStartSize
+rev_slider_
+revslider_
