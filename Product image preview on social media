@@ -1,0 +1,8 @@
+{% if product.image %}
+  <meta property="og:image" content="{{ product.featured_image.src | img_url: '1200x' }}" />
+{% endif %}
+<meta property="og:title" content="{{ product.title }}" />
+<meta property="og:type" content="product" />
+<meta property="og:url" content="{{ shop.url }}/products/{{ product.handle }}" />
+<meta property="og:description" content="{{ product.description | strip_html | escape }}" />
+<meta property="og:site_name" content="{{ shop.name }}" />
